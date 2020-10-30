@@ -13,6 +13,7 @@ int buttonState2 = 0;
 void setup() {
   // initialize the speaker pin as an output:
   pinMode(buzzer, OUTPUT);
+  digitalWrite(buzzer, LOW);
   
   // initialize the pushbutton pins as inputs:
   pinMode(buttonPin0, INPUT);
@@ -29,14 +30,15 @@ void loop() {
 
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
-  if (buttonState0 == HIGH) {
+  if (buttonState0 == HIGH && buttonState1 == LOW && buttonState2 == LOW) {
     digitalWrite(buzzer, 264);
-  } else if (buttonState1 == HIGH) {
+  } else if (buttonState1 == HIGH && buttonState0 == LOW && buttonState2 == LOW) {
     digitalWrite(buzzer, 330);
-  } else if (buttonState2 == HIGH) {
+  } else if (buttonState2 == HIGH && buttonState0 == LOW && buttonState1 == LOW) {
     digitalWrite(buzzer, 440);
   } else {
     // turn LED off:
-    noTone(buzzer);
+    digitalWrite(buzzer, LOW);
+    //noTone(buzzer);
   }
 }
