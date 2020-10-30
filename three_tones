@@ -1,0 +1,42 @@
+// constants won't change. They're used here to
+// set pin numbers:
+const int buttonPin0 = 2;     // the number of the pushbutton pin
+const int buttonPin1 = 3;
+const int buttonPin2 = 4;
+const int buzzer =  13;      // the number of the LED pin
+
+// variables will change:
+int buttonState0 = 0;         // variable for reading the pushbutton status
+int buttonState1 = 0;
+int buttonState2 = 0;
+
+void setup() {
+  // initialize the speaker pin as an output:
+  pinMode(buzzer, OUTPUT);
+  
+  // initialize the pushbutton pins as inputs:
+  pinMode(buttonPin0, INPUT);
+  pinMode(buttonPin1, INPUT);
+  pinMode(buttonPin2, INPUT);
+}
+
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState0 = digitalRead(buttonPin0);
+  buttonState1 = digitalRead(buttonPin1);
+  buttonState2 = digitalRead(buttonPin2);
+
+  // check if the pushbutton is pressed.
+  // if it is, the buttonState is HIGH:
+  if (buttonState0 == HIGH) {
+    digitalWrite(buzzer, 264);
+  } else if (buttonState1 == HIGH) {
+    digitalWrite(buzzer, 330);
+  } else if (buttonState2 == HIGH) {
+    digitalWrite(buzzer, 440);
+  } else {
+    // turn LED off:
+    noTone(buzzer);
+  }
+}
