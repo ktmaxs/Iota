@@ -59,22 +59,24 @@ void loop() {
    Dev: Michalis Vasilakis // Date: 9/6/2015 // www.ardumotive.com */
 
 
-const int buzzer = 13; //buzzer to arduino pin 9
+const int buzzer = 13; //buzzer to arduino pin 13
 int sensorValue = 0;
 
-void setup(){
+void setup()
+{
  
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
   pinMode(A0, INPUT); // seting up pot as input
 
 }
 
-void loop(){
+void loop()
+{
   sensorValue = analogRead(A0);
   digitalWrite(buzzer, 466);
-  delay(sensorValue/1000); // delay 11 ms
+  delay(sensorValue/500); // delay 11 ms
   noTone(buzzer);
-  delay(sensorValue/1000);
+  delay(sensorValue/500);
   /*
   tone(buzzer, 1000); // Send 1KHz sound signal...
   delay(1000);        // ...for 1 sec
