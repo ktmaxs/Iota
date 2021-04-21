@@ -10,6 +10,7 @@ create new venv
 
 
 Basketball Sensor:
+
 Link for project that was adpated: https://learn.adafruit.com/neopixel-mini-basketball-hoop/adding-a-point-sensor
 
 Fun things to note about the wiring of the GemmaM0:
