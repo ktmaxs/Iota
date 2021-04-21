@@ -2,8 +2,23 @@
 
 **COLOR DETECTOR**
 
-create new venv
+*Use Python 3.7 and pip3*
 
+Use the link below to set up venv and cv2  (Step 1 is not necessary)
+
+https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
+
+Then, within the venv, 
+
+`pip3 install webcolors`  documentation: https://webcolors.readthedocs.io/en/1.11.1/
+
+`pip3 install pyttsx3` documentation: https://pypi.org/project/pyttsx3/
+
+I recall having some problems with GPIO in the venv, but off the top of my head I can't remember.  You can google, and it you can't figure it out from there, email me *kmaxson18@georgefox.edu* and I can do my best to help
+
+pygame should be already installed, but if you messed up like I did, you can just use this: https://amiradata.com/how-to-install-pygame-using-pip-ide/ 
+
+`pip3 install -U scikit-learn` documentation: https://scikit-learn.org/stable/install.html
 
 
 **BASKETBALL**
