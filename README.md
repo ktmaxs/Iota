@@ -2,7 +2,7 @@
 
 **COLOR DETECTOR**
 
-*Use Python 3.7 and pip3*
+IMPORTANT: Use Python 3.7 and pip3
 
 Use the link below to set up venv and cv2  (Step 1 is not necessary)
 
