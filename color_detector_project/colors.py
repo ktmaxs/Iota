@@ -2,7 +2,7 @@
 # Authors: Kate Maxson and Bret Henkel
 # Servant Team IOTA 2020-2021
 # 
-# contact: kmaxson18@georgefox.edu or 209.770.7262
+# contact: kmaxson18@georgefox.edu
 
 # ======================================================
 # IMPORTS
