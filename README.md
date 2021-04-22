@@ -2,6 +2,8 @@
 
 **COLOR DETECTOR**
 
+All necessary files are in the Color Detector folder
+
 IMPORTANT: Use Python 3.7 and pip3
 
 Use the link below to set up venv and cv2  (Step 1 is not necessary)
@@ -19,6 +21,8 @@ I recall having some problems with GPIO in the venv, but off the top of my head 
 pygame should be already installed, but if you messed up like I did, you can just use this: https://amiradata.com/how-to-install-pygame-using-pip-ide/ 
 
 `pip3 install -U scikit-learn` documentation: https://scikit-learn.org/stable/install.html
+
+The code that is supposed to be run is `colors.py`.  I have supplied the other codes as examples and waypoints to that code, in case it is needed.
 
 
 **BASKETBALL**
