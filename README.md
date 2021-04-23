@@ -41,3 +41,15 @@ Another thing to note: We were thinking the best way to use the sensor with a ba
 
 
 *Pi setup*
+
+You will need a massive number of Python modules. Get all of the modules that the program imports
+
+I used Pycharm as my IDE, it works well for Python
+
+Set up VNC Viewer and VNC Connect to be able to wirelessly connect to and control the Raspberry Pi. Make an account so that you can view the raspberry pi from a different network
+
+Connect the raspberry pi to the Bruin Guest network
+
+I found this tutorial to be helpful for installing openCv on the Pi
+https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
+
